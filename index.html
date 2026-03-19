@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mind Logic</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="sky3d">
+<div class="sun"></div>
+
+<div class="cloud layer1" style="top:120px"></div>
+<div class="cloud layer1" style="top:180px"></div>
+
+<div class="cloud layer2" style="top:300px"></div>
+<div class="cloud layer2" style="top:360px"></div>
+
+<div class="cloud layer3" style="top:500px"></div>
+<div class="cloud layer3" style="top:560px"></div>
+
+<div class="bird bird1">🐦</div>
+<div class="bird bird2">🐦</div>
+</div>
+
+<h1 class="title">Mind Logic</h1>
+
+<!-- START -->
+<div id="startScreen" class="card">
+<h2>🧠 Mind Logic</h2>
+<p>Enter Your Name</p>
+<input id="playerName" placeholder="Your name">
+<button onclick="startGame()">Start Game</button>
+</div>
+
+<!-- DESCRIPTION -->
+<div id="descScreen" class="hidden descPage">
+<h1 class="descTitle">Description</h1>
+
+<p class="descText">
+This web game is an interactive learning tool that challenges players with logic-based questions.
+</p>
+
+<p class="descText">
+It improves critical thinking and decision making.
+</p>
+
+<p class="descText">
+You must reach <b>70%</b> score to pass the challenge.
+</p>
+
+<button onclick="showTopics()">Play</button>
+</div>
+
+<!-- TOPIC SELECT -->
+<div id="topicScreen" class="hidden topicPage">
+
+<h1 class="descTitle">Choose Topic</h1>
+
+<div class="topicGrid">
+
+<div class="topicBox">Probability</div>
+<div class="topicBox">Group Theory</div>
+<div class="topicBox">Predicate Logic</div>
+<div class="topicBox">Counting Theory</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
